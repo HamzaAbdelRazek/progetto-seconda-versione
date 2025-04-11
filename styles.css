@@ -1,0 +1,302 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Merienda;
+    color: #6E6E6E;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 100px;
+  }
+  
+  /* Header sfumato */
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 234px;
+    background: linear-gradient(135deg, #FF4286, #FD7F78);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: -1;
+  }
+  
+  .profile-card {
+    margin-top: 85px;
+    background: white;
+    border-radius: 60px;
+    padding: 60px 20px 30px;
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Cerchi decorativi */
+  .profile-card::before,
+  .profile-card::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .profile-card::before {
+    left: 25px;
+    background-color: #FF4286;
+  }
+  
+  .profile-card::after {
+    right: 25px;
+    background-color: #FD7F78;
+  }
+  
+  .profile-pic {
+    position: absolute;
+    top: -100px;
+    left: 35.7%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  h2 {
+    font-family:'Merienda', cursive;
+    font-size: 42px;
+    margin-top: 40px;
+    color: #6E6E6E;
+  }
+  
+  .location {
+    font-size: 16px;
+    color: #6E6E6E;
+    margin-bottom: 10px;
+  }
+  
+  .role {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #6E6E6E;
+  }
+  
+  .stats {
+    margin-left: 23.9%;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: #6E6E6E;
+    
+  }
+  
+  .stats strong {
+    font-size: 24px;
+    color: #6E6E6E;
+  }
+  .bubble1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 50%;
+    top: 10%;
+    left: 8%;
+  }
+  
+  .bubble2 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: rgba(217, 217, 217, 0.25);
+    border-radius: 50%;
+    top: 20%;
+    left: 30%;
+  }
+  
+  .bubble3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: rgba(217, 217, 217, 0.15);
+    border-radius: 50%;
+    top: 35%;
+    left: 50%;
+  }
+  
+  .bubble4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 50%;
+    top: 25%;
+    left: 70%;
+  }
+  
+  .bubble5 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 50%;
+    top: 40%;
+    left: 5%;
+  }
+  
+  .bubble6 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: rgba(217, 217, 217, 0.3);
+    border-radius: 50%;
+    top: 15%;
+    left: 85%;
+  }
+  
+  .bubble7 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 50%;
+    top: 5%;
+    left: 60%;
+  }
+  
+  .bubble8 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: rgba(217, 217, 217, 0.18);
+    border-radius: 50%;
+    top: 50%;
+    left: 40%;
+  }
+  
+  .bubble9 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: rgba(217, 217, 217, 0.22);
+    border-radius: 50%;
+    top: 30%;
+    left: 20%;
+  }
+  
+  .bubble10 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: rgba(217, 217, 217, 0.16);
+    border-radius: 50%;
+    top: 12%;
+    left: 75%;
+  }
+
+ 
+  @media (max-width: 240px) {
+    body {
+      padding-top: 60px;
+    }
+  
+    .profile-card {
+      width: 95%;
+      height: auto;
+      padding: 40px 10px 20px;
+      border-radius: 40px;
+    }
+  
+    .profile-pic {
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+    }
+  
+    h2 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  
+    .role {
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .stats strong {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    body {
+      padding-top: 80px;
+    }
+  
+    .profile-card {
+      width: 90%;
+      height: auto;
+      padding: 50px 20px 30px;
+      border-radius: 50px;
+    }
+  
+    .profile-pic {
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+  
+    .role {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  
+    .stats {
+      margin-left: 0;
+      width: 100%;
+      font-size: 16px;
+      justify-content: space-around;
+    }
+  
+    .stats strong {
+      font-size: 20px;
+    }
+  }
+  
