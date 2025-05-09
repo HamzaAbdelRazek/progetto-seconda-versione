@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +27,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     z-index: -1;
+    overflow: hidden;
   }
   
   .profile-card {
@@ -114,105 +114,137 @@
     font-size: 24px;
     color: #6E6E6E;
   }
-  .bubble1 {
+
+  @keyframes waveMotion {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(calc(100% - 200px), calc(100% - 100px)); }
+    50% { transform: translate(calc(50% - 100px), calc(50% - 50px)); }
+    75% { transform: translate(calc(75% - 150px), calc(75% - 75px)); }
+    100% { transform: translate(0, 0); }
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 234px;
+    background: linear-gradient(135deg, #FF4286, #FD7F78);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble1 {
     position: absolute;
     width: 60px;
     height: 60px;
     background: rgba(217, 217, 217, 0.2);
     border-radius: 50%;
     top: 10%;
-    left: 8%;
-  }
-  
-  .bubble2 {
+    left: 10%;
+    animation: waveMotion 15s infinite ease-in-out;
+}
+
+.bubble2 {
     position: absolute;
     width: 140px;
     height: 140px;
     background: rgba(217, 217, 217, 0.25);
     border-radius: 50%;
     top: 20%;
-    left: 30%;
-  }
-  
-  .bubble3 {
+    left: 20%;
+    animation: waveMotion 18s infinite ease-in-out;
+}
+
+.bubble3 {
     position: absolute;
     width: 70px;
     height: 70px;
     background: rgba(217, 217, 217, 0.15);
     border-radius: 50%;
-    top: 35%;
-    left: 50%;
-  }
-  
-  .bubble4 {
+    top: 30%;
+    left: 30%;
+    animation: waveMotion 20s infinite ease-in-out;
+}
+
+.bubble4 {
     position: absolute;
     width: 50px;
     height: 50px;
     background: rgba(217, 217, 217, 0.2);
     border-radius: 50%;
-    top: 25%;
-    left: 70%;
-  }
-  
-  .bubble5 {
+    top: 40%;
+    left: 40%;
+    animation: waveMotion 17s infinite ease-in-out;
+}
+
+.bubble5 {
     position: absolute;
     width: 90px;
     height: 90px;
     background: rgba(217, 217, 217, 0.1);
     border-radius: 50%;
-    top: 40%;
-    left: 5%;
-  }
-  
-  .bubble6 {
+    top: 50%;
+    left: 50%;
+    animation: waveMotion 22s infinite ease-in-out;
+}
+
+.bubble6 {
     position: absolute;
     width: 35px;
     height: 35px;
     background: rgba(217, 217, 217, 0.3);
     border-radius: 50%;
-    top: 15%;
-    left: 85%;
-  }
-  
-  .bubble7 {
+    top: 60%;
+    left: 60%;
+    animation: waveMotion 19s infinite ease-in-out;
+}
+
+.bubble7 {
     position: absolute;
     width: 55px;
     height: 55px;
     background: rgba(217, 217, 217, 0.2);
     border-radius: 50%;
-    top: 5%;
-    left: 60%;
-  }
-  
-  .bubble8 {
+    top: 70%;
+    left: 70%;
+    animation: waveMotion 21s infinite ease-in-out;
+}
+
+.bubble8 {
     position: absolute;
     width: 65px;
     height: 65px;
     background: rgba(217, 217, 217, 0.18);
     border-radius: 50%;
-    top: 50%;
-    left: 40%;
-  }
-  
-  .bubble9 {
+    top: 80%;
+    left: 80%;
+    animation: waveMotion 16s infinite ease-in-out;
+}
+
+.bubble9 {
     position: absolute;
     width: 45px;
     height: 45px;
     background: rgba(217, 217, 217, 0.22);
     border-radius: 50%;
-    top: 30%;
-    left: 20%;
-  }
-  
-  .bubble10 {
+    top: 90%;
+    left: 90%;
+    animation: waveMotion 23s infinite ease-in-out;
+}
+
+.bubble10 {
     position: absolute;
     width: 75px;
     height: 75px;
     background: rgba(217, 217, 217, 0.16);
     border-radius: 50%;
-    top: 12%;
-    left: 75%;
-  }
+    top: 15%;
+    left: 85%;
+    animation: waveMotion 24s infinite ease-in-out;
+}
 
  
   @media (max-width: 240px) {
