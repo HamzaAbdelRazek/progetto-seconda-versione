@@ -35,5 +35,13 @@
       <div><strong>5</strong><br>Experience</div>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('.bubble').forEach(bubble => {
+    let duration = Math.random() * 5 + 5; // Animazione tra 5 e 10 sec
+    let delay = Math.random() * 3; // Ritardo casuale
+    bubble.style.animationDuration = `${duration}s`;
+    bubble.style.animationDelay = `${delay}s`;
+  });
+</script>
 </body>
 </html>
